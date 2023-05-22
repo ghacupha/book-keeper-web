@@ -1,0 +1,21 @@
+{
+  "changelogDate": "20230418131941",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "persistentKey",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "persistentMap",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "PersistentMap",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

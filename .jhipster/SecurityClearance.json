@@ -1,0 +1,30 @@
+{
+  "changelogDate": "20230418142316",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "clearanceLevel",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "securityClearanceLevel",
+      "fieldType": "SecurityClearanceLevel",
+      "fieldValidateRules": ["required", "unique"],
+      "fieldValues": "LEVEL_1,LEVEL_2,LEVEL_3,LEVEL_5,LEVEL_6"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "SecurityClearance",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "clearanceLevel",
+      "otherEntityName": "securityClearance",
+      "relationshipName": "securityClearance",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}
